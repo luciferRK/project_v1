@@ -10,20 +10,10 @@
                         Address
                     </span>
                     <div required class="wrap-input100 validate-input" >
-                        <!--<select ng-model="selectedName" ng-options="x for x in names" class="input100_dropDown inputs" style="z-index:1;"></select>-->
-                        <!--<ejs-dropdownlist 
-                            id='country_drop' 
-                            #list_country 
-                            [dataSource]='countryArray' 
-                            [fields]='localFields'
-                            [placeholder]='localWaterMark' 
-                            [popupHeight]='height'
-                            class="input100_dropDown inputs">
-                        </ejs-dropdownlist>-->
                         <div class="input100 inputs"
                             style="position:absolute; z-index:-1;"></div>
                         <select [(ngModel)]="selectedCountry" name="country" style="outline:none;" (change)="setStates()">
-                            <option [ngModel]="undefined" [selected]="true"  hidden class="drop_placeholder" value="Select Your country">Select Your Country</option>
+                            <option ngModel [selected]="true"  hidden class="drop_placeholder" value="Select Your country">Select Your Country</option>
                             <option *ngFor="let country_var of countries" [value]="country_var.id" style="outline:none;">
                                 {{country_var.viewValue}}
                             </option>

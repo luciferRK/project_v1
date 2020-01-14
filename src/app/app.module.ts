@@ -11,6 +11,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PwdComponent } from './pwd/pwd.component';
+import { ExploreComponent } from './explore/explore.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PwdComponent } from './pwd/pwd.component';
     SignUpComponent,
     SignUpComponent_2,
     LogInComponent,
-    PwdComponent
+    PwdComponent,
+    ExploreComponent
   ],
   imports: [
     BrowserModule,

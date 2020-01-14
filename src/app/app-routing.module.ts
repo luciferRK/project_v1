@@ -1,3 +1,4 @@
+import { ExploreComponent } from './explore/explore.component';
 import { PwdComponent } from './pwd/pwd.component';
 import { SignUpComponent_2 } from './sign-up/sign-up_2.component';
 import { LogInComponent } from './log-in/log-in.component';
@@ -21,6 +22,9 @@ const routes: Routes = [
   },
   {
     path:'password', component:PwdComponent
+  },
+  {
+    path:'explore', component:ExploreComponent
   }
 ];
 
